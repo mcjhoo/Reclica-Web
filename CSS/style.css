@@ -1,0 +1,63 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    background:rgb(229,229,229);
+}
+
+article, aside, section, header, footer, nav {
+    display:block;
+}
+
+main {
+    width:960px;
+    margin:10px auto;
+    box-shadow:0 0 10px #999999;
+    background-color:rgb(255,255,255);
+    font-size:13px;
+    min-width: 960px;
+}
+
+nav {
+    width:960px;
+    height:40px;
+    background-color:rgb(12,4,1);
+}
+
+nav a {
+    float:left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #FC9;
+    text-decoration: none;
+    padding:5px 2%;
+    margin-top: 5px;
+    font-size: 100%;
+    text-align: center;
+}
+
+.conteudo {
+    float:left;
+    width:640px;
+    height:350px;
+    background-color:rgb(255,210,77);
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.apoio {
+    float:right;
+    width:310px;
+    height:350px;
+    background-color:rgb(221,221,221);
+    margin-top:10px;
+}
+
+footer {
+    clear:both;
+    width:960px;
+    height:60px;
+    background-color:rgb(153,153,153);
+}
