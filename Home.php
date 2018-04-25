@@ -13,16 +13,7 @@
         <link rel="stylesheet" href="CSS/style.css">
     
     </head>
-<style>
-    header {
-    width:960px;
-    height:200px;
-    background-color:rgb(255,127,0);
-    background-color:rgb(12,4,1);
-    background-image: url(header_principal.png);
-    background-repeat:no-repeat;		
-}
-</style>
+
     <body>
         <main>
             <header></header>
@@ -38,13 +29,31 @@
 <section class="conteudo">
     
     <select id="CmbUF"> 
-        <option value="">Selecione a UF</option>
-        <?php
-            foreach($pdo->query('SELECT cd_cidade, nome_cidade FROM cidade order by nome_cidade') as $row){
-                echo '<option value="'.$row['cd_cidade'].'">'.$row['nome_cidade'].'</option>';
-            }       
-        ?>
-    </select>
+		<option value="">Selecione a UF</option>
+		<?php
+			foreach($pdo->query('SELECT cd_cidade, nome_cidade FROM cidade order by nome_cidade') as $row){
+				echo '<option value="'.$row['cd_cidade'].'">'.$row['nome_cidade'].'</option>';
+			}       
+		?>
+	</select>
+	<select id="CmbCidade"> 
+	
+	</select>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#CmbUF').cascade({
+					source: "call_cidades.php",
+					cascaded: "CmbCidade",
+					extraParams: { cd_cidade: function(){ return $('#CmbUF').val();  } },
+					dependentLoadingLabel: "Carregando Cidades ...",
+					dependentNothingFoundLabel: "Não existe cidades",
+					dependentStartingLabel: "Selecione a UF",
+			});     
+		});
+
+	</script>
+	
+	
 </section>
             <section class="apoio"></section>
 

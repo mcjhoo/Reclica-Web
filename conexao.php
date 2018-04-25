@@ -1,9 +1,4 @@
-<?php 
-    //Passo 1 - abrir conexão
-    $conecta = mysqli_connect("localhost","root","","recicla_web");
-    
-    //Passo 2 - Testar conexão
-    if (mysqli_connect_errno() ){
-        die("Conexão falhou: " . mysqli_connect_errno());
-    }
+<?php
+    $pdo = new PDO('mysql:dbname=recicla_web;host=localhost', 'root', 'vertrigo', 
+                    array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
 ?>
