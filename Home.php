@@ -1,6 +1,7 @@
 <?php 
     require_once("conexao.php");
 ?>
+
 <!doctype html>
 <html>
     <head>
@@ -41,10 +42,10 @@
         <?php
             foreach($pdo->query('SELECT cd_cidade, nome_cidade FROM cidade order by nome_cidade') as $row){
                 echo '<option value="'.$row['cd_cidade'].'">'.$row['nome_cidade'].'</option>';
-        }
+            }       
         ?>
-</select>
-            </section>
+    </select>
+</section>
             <section class="apoio"></section>
 
             <footer></footer>
