@@ -3,4 +3,4 @@ Lista cronograma 30/04
 *Criar pagina .html utilizando mesmo style da home e trazendo o mesmo menu
 *criar pagina .php para realizar a função da outra pagina
 *dar style na pagina contato.php
-*upar todos os frame utilizando os endereço que esta no excel "pontos de descarte"
+*upar todos os frame utilizando os endereço que esta no excel "pontos de descarte" com "updat no banco".
