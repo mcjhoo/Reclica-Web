@@ -1,4 +1,4 @@
-html, body {
+h   tml, body {
     margin:0;
     padding:0;
 }
@@ -7,10 +7,17 @@ html {
     background:rgb(229,229,229);
 }
 
-article, aside, section, header, footer, nav {
+article, aside, section, footer, nav {
     display:block;
 }
-
+header {
+    width:960px;
+    height:200px;
+    background-color:rgb(255,127,0);
+    background-color:rgb(12,4,1);
+    background-repeat:no-repeat;		
+    display:block;
+}
 main {
     width:960px;
     margin:10px auto;
@@ -23,14 +30,14 @@ main {
 nav {
     width:960px;
     height:40px;
-    background-color:rgb(12,4,1);
+    background-color: DarkGreen	;
 }
 
 nav a {
     float:left;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    color: #FC9;
+    color: LightCyan;
     text-decoration: none;
     padding:5px 2%;
     margin-top: 5px;
@@ -40,24 +47,116 @@ nav a {
 
 .conteudo {
     float:left;
-    width:640px;
-    height:350px;
-    background-color:rgb(255,210,77);
+    width:630px;
+    height:auto;
+    background-color: BlanchedAlmond;
     margin-top:10px;
     margin-bottom:20px;
 }
+/* estilos da pesquisa */
 
+#janela_formulario {
+    width:650px;
+    margin:10px auto 10px;
+
+}
+
+#janela_formulario form {
+    width:470px;
+    margin:10px auto;
+}
+
+#janela_formulario form h2  {
+    font-family: sans-serif;
+    color:#9A9668;
+}
+
+#janela_formulario form p {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#janela_formulario form label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: #000;    
+}
+
+#janela_formulario form input[type="text"] {
+    width:300px;
+    padding:10px;
+    border:1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#janela_formulario form input[type="email"] {
+    width:300px;
+    padding:10px;
+    border:1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#janela_formulario textarea {
+    width:350px;
+    height: 50px;
+    padding:10px;
+    border:1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#janela_formulario form input[type="submit"] {
+    display: block;
+    padding:10px 20px;
+    margin-top:15px;
+    color: #FFF;
+    border:0;
+    border-radius: 5px;
+    background-color: #C5996B;
+    outline: none;
+    cursor: pointer;
+}
+/* fim do estilo da pesquisa */
 .apoio {
     float:right;
     width:310px;
-    height:350px;
+    height:330px;
     background-color:rgb(221,221,221);
     margin-top:10px;
 }
-
+.apoio img {
+    float: right;
+    width: 170px;
+    height: 200px;
+    border: 2px;
+    padding: 10px;
+}
+.apoio p {
+    padding: 5px;
+    font-family: sans-serif;
+}
+.apoio h2 {
+    font-family: sans-serif;
+    padding: 2px;
+    
+}
 footer {
     clear:both;
     width:960px;
     height:60px;
     background-color:rgb(153,153,153);
+    text-align: center
 }
