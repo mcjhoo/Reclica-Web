@@ -36,10 +36,12 @@
 
 <!-- Sessão 1 combo com banco de dados -->
             
-<div class="conteudo">
+<section class="conteudo">
     <!-- combos do select + banco -->
      <div id="janela_formulario">
-                <form action="contato.php" method="post">
+         <p class="formcontato">Duvidas? Sugestões? Não encontrou oque desejava?</p>
+         <p class="formcontato">Envie-nos uma mensagem que lhe retornaremos em breve.</p>
+         <form action="contato.php" method="post">
                     <label>Nome</label>
                     <input type="text" name="nome" placeholder="Digite seu nome"><br>
                     <label>E-mail</label>
@@ -54,13 +56,13 @@
                 </form>
             </div>
     
-</div>
+</section>
             
            <!-- Sessão 2  de apoio lateral --> 
 <section class="apoio">
     <img src="imagens/informativo.PNG">
-    <h2>Competição coleta lixo de eletrônico</h2>
-    <p>Gincana reúne 70 escolas públicas e particulares da capital. No fim do mês, durante um festival, os vencedores serão anunciados. Confira a reportada da globo <a href="https://globoplay.globo.com/v/6694885/"><b>aqui</b></a></p>
+    <h2 class="justificado">Competição coleta lixo de eletrônico</h2>
+    <p class="justificado">Gincana reúne 70 escolas públicas e particulares da capital. No fim do mês, durante um festival, os vencedores serão anunciados. Confira a reportada da globo <a href="https://globoplay.globo.com/v/6694885/"><b>aqui</b></a></p>
 </section>
 
             <footer>

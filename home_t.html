@@ -26,35 +26,57 @@
             
 <section class="conteudo">
     <!-- combos do select + banco -->
-     <form name="UF_Cidade" method="GET" action="home_2.php">
+     <form class="comboselect" name="UF_Cidade" method="GET" action="home_2.php">
+             <h2 style="color: #e74c3c;">Pesquise um ponto mais proximo de voce.</h2>
                     <select name="CmbCidade">
                         <option value="">Selecione a Cidade</option>
                         {{combocidade}}
-                    </select>
+                    </select><br>
          
                     <select name="CmbBairro">
                         <option value="">Selecione o Bairro</option>
                         {{combobairro}}
-                    </select>
+                    </select><br>
          
                     <select name="CmbEmpresa">
                         <option value="">Selecione a Empresa</option>
                         {{comboempresa}}
                     </select>
-         
-
-                  <input type="submit" value="selecionar"/>
-                </form>
+                  <input type="submit" value="Pesquisar"/><br>
+                </form><br><br>
+    <img src="imagens/linha.PNG" width="630" height="10"><br><br><br>
     
-</section>
+    <div class="mapageal">
+        <ul>
+            <li><h2 style="color: #e74c3c;">Ou se preferir visualize todos os pontos</h2></li>
+        </ul>
+            <iframe class="frame" src="https://www.google.com/maps/d/embed?mid=1ka1X0cCXu7m6JWWCFshKKsRqoKikUcoL" width="590" height="450"></iframe>
             
+        </div>
+    
+    
+    <br><br><img src="imagens/linha.PNG" width="630" height="10"><br><br>
+                                                                        
+<div class="notice">
+    
+        <img src="imagens/notice01.jpg" alt="Mundo produziu quantidade recorde de lixo eletrônico em 2016.">
+        
+        <h2>Mundo produziu quantidade recorde de lixo eletrônico em 2016.</h2>
+        <p>Ao todo foram geradas 45 milhões de toneladas de resíduo eletrônico, que inclui de celulares a geladeiras, mas apenas 20% foram reciclados. Matérias-primas no valor de 55 bilhões de euros foram parar no lixo. <a href="http://m.dw.com/pt-br/mundo-produziu-quantidade-recorde-de-lixo-eletr%C3%B4nico-em-2016/a-41786249"> leia mais sobre.. .</a></p><br><br>
+            
+    </div>
+        
+</section>
+           
            <!-- Sessão 2  de apoio lateral --> 
 <section class="apoio">
-    
+    <img src="imagens/informativo.PNG">
+    <h2>Competição coleta lixo de eletrônico</h2>
+    <p class="justificado">Gincana reúne 70 escolas públicas e particulares da capital. No fim do mês, durante um festival, os vencedores serão anunciados. Confira a reportada da globo <a href="https://globoplay.globo.com/v/6694885/"><b>aqui</b></a></p>
 </section>
 
             <footer>
-            &copy; Fatec Recicla. Todos os direitos reservados.
+            &copy; Fatec e-descarte. Todos os direitos reservados.
             </footer>
         </main>
     </body>

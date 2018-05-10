@@ -2,6 +2,9 @@ h   tml, body {
     margin:0;
     padding:0;
 }
+a {
+    text-decoration: none;
+}
 
 html {
     background:rgb(229,229,229);
@@ -45,6 +48,8 @@ nav a {
     text-align: center;
 }
 
+
+/*        */
 .conteudo {
     float:left;
     width:630px;
@@ -53,6 +58,16 @@ nav a {
     margin-top:10px;
     margin-bottom:20px;
 }
+
+.comboselect select {
+    margin-left: 10px;
+    
+}
+.comboselect h2 {
+    text-align: left;
+    margin-left: 15px;
+}
+
 /* estilos da pesquisa */
 
 #janela_formulario {
@@ -129,20 +144,88 @@ nav a {
     outline: none;
     cursor: pointer;
 }
+/* Linha pontilahda*/
+
+/* continuidade depois do combo box*/
+.notice {
+    width:auto;
+    height:auto;
+    background-color: BlanchedAlmond;
+    margin-top:10px;   
+}
+.notice img {
+    float: center;
+    width: 420px;
+    height: 310px;
+    border: solid 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.notice h2, p {
+    margin-left: 10px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+/* home pagina mapa*/
+.mapa h2 {
+    font-size: 2em;
+    color: #e74c3c;  
+    }
+.mapa {
+    float: left;
+    width:635px;
+    height:auto;
+    background-color: BlanchedAlmond;
+    margin-top:10px;
+}
+
+.mapa h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+}
+
+.mapa p {
+    font-size: 1.2em;
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-family: sans-serif;
+}
+.mapa ul {
+    list-style-type: none;
+}
+
+div.mapageal ul {
+    list-style-type: none;
+}
+
+iframe.frame {
+    margin-left: 10px;
+    border: solid 3px;
+    border-radius: 5px;
+    
+}
+
 /* fim do estilo da pesquisa */
 .apoio {
-    float:right;
+    float: right;
     width:310px;
-    height:330px;
+    height:auto;
     background-color:rgb(221,221,221);
     margin-top:10px;
 }
 .apoio img {
-    float: right;
-    width: 170px;
+    margin: 10px;
+    float: left;
+    width: 260px;
     height: 200px;
     border: 2px;
-    padding: 10px;
+    padding: .5px;
+    border-radius: 5px;
+    border: solid 1px;
+    
 }
 .apoio p {
     padding: 5px;
@@ -151,6 +234,59 @@ nav a {
 .apoio h2 {
     font-family: sans-serif;
     padding: 2px;
+    margin-left: 5px;
+    
+}
+.box .content {
+			padding: 1rem;
+		}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.box .content {
+				padding: 2rem;
+			}
+
+		}
+.carinho {
+    margin-right: 20px;
+    padding: 1px;
+    border: solid 0.5px ;
+    border-radius: 5px;
+    
+}
+p.justificado {
+    text-align: justify;
+    margin-right: 10px;
+}
+p.formcontato {
+    font-family: sans-serif;
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+.materiais {
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    
+}
+
+.content .sobre {
+    width: 360px;
+    height: 230px;
+    padding: 10px;
     
 }
 footer {
@@ -158,5 +294,6 @@ footer {
     width:960px;
     height:60px;
     background-color:rgb(153,153,153);
-    text-align: center
+    text-align: center;
+    font-size: 1.3em;
 }
