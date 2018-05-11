@@ -1,10 +1,16 @@
 <?php
+if (!empty($_GET['CmbCidade']) && !empty($_GET['CmbBairro']) && !empty($_GET['CmbEmpresa'])){
+    header('location:mapa.php?CmbEmpresa=' .$_GET['CmbEmpresa']); 
+
+}
+
 require_once("conexao.php"); // conexão com o banco
  
 $cidade=''; // inicializa a variável UF
 $bairro='';
 $empresa='';
 // para cada linha, concatena um novo "<option>" na variável $uf
+
 
 foreach($pdo->query('SELECT cd_cidade, nome_cidade FROM cidade order by nome_cidade') as $row){
     if (!empty($_GET['CmbCidade']) && $_GET['CmbCidade'] == $row['cd_cidade'])  {
@@ -18,10 +24,9 @@ foreach($pdo->query('SELECT cd_cidade, nome_cidade FROM cidade order by nome_cid
 // carrega a página HTML
 $pagina=file_get_contents('home_t.html');
  
-/*
- * Essa etapa poderia ser mesclada com a substituição de cidades (exemplo abaixo, antes do ECHO final)
- */
-// substitui o {{UF}} da página com os <options>
+
+// Essa etapa poderia ser mesclada com a substituição de cidades (exemplo abaixo, antes do ECHO final)
+
 
 if (!empty($_GET['CmbCidade'])) {
     foreach($pdo->query('SELECT cd_bairro, nome_bairro FROM bairro WHERE cd_cidade = '.$_GET['CmbCidade'].' order by nome_bairro') as $row){
@@ -35,16 +40,8 @@ if (!empty($_GET['CmbCidade']) && !empty($_GET['CmbBairro'])){
     }
     
 }
-/*
- * Essa etapa poderia ser mesclada com a substituição de UF, como no exemplo abaixo
- */
-// completa a página colocando o select de cidades (ou não)
-// $pagina=str_replace('{{CIDADES}}', $cidades, $pagina);
-
-/* Exemplo de etapa única de substituição de valores na página:
- *      $pagina=str_replace(['{{UF}}', '{{CIDADES}}'], [$uf, $cidades], $pagina);
- */
-   
+    
+    
 $pagina=str_replace(['{{combocidade}}', '{{combobairro}}', '{{comboempresa}}'], [$cidade, $bairro, $empresa], $pagina);
 
 // imprime a página pro usuário
