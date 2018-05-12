@@ -1,4 +1,10 @@
 <?php
+
+// desvia para mapa.php caso o usuário já tenha selecionado cidade, bairro e empresa
+if (!empty($_GET['CmbCidade']) && !empty($_GET['CmbBairro']) && !empty($_GET['CmbEmpresa']))
+    header('Location:mapa.php?CmbEmpresa='.$_GET['CmbEmpresa']);
+
+
 require_once("conexao.php"); // conexão com o banco
  
 $cidade=''; // inicializa a variável UF
